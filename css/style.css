@@ -28,6 +28,7 @@ html, body {
 h1.name {
     font-size: 64px;
     font-weight: 400;
+    color: #2D2D37;
     margin: 20px;
 }
 
@@ -36,15 +37,31 @@ h1.name {
     margin: 25px auto;
     padding: 0;
 }
-
-.linkedin-link {
-    background: url('../images/linkedin.svg') no-repeat;
+.info {
+    color: #E27A3F;
 }
 
-.github-link {
-    background: url('../images/github.svg') no-repeat;
+.social-list {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
 }
 
-.mail-link {
-    background: url('../images/twitter.svg') no-repeat;
+.social-list li {
+    display: inline-block;
+    margin: 10px 15px;
+}
+
+.social-list li > a {
+    width: 40px;
+    height: 40px;
+}
+
+.social-img {
+    width: 40px;
+    height: 40px;
+}
+
+.social-img:hover {
+    transform: scale(1.10);
 }
