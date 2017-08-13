@@ -9,6 +9,10 @@ html, body {
     margin: 0;
 }
 
+p {
+    line-height: 1.5em;
+}
+
 .link {
     text-decoration: none;
     color: #2F2D2B;
