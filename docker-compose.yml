@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  portfolio:
+    image: paulboiseau/portfolio
+    build:
+        context: .
+        dockerfile: docker/Dockerfile
+    container_name: portfolio
+    ports:
+        - 8181:80
+    environment:
+        - NGINX_HOST=paulboiseau.com
+    labels:
+        - "traefik.enable=true"
+        - "traefik.backend=portfolio"
+        - "traefik.frontend.rule=Host:paulboiseau.com"
+        - "traefik.port=80"
